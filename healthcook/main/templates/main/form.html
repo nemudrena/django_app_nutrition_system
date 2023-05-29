@@ -1,0 +1,59 @@
+{% extends 'main/layout.html' %}
+{% block header%}
+<h1>Составление меню</h1>
+{% endblock%}
+{% block css%}
+  <link rel= "stylesheet" href="static/main/css/form.css">
+{% endblock%}
+{% block content%}
+
+    <div style="margin-top:20px;margin-bottom:10px;color:white;width:82%;margin-left:9%;padding:20px;border-radius:5px;"class="features">
+            <h5 style="font-size:calc(11px + (13+13*0,7) * (100vw - 320px) / 1080);margin-top:10px;font-weight:bold;">
+              Заполните анкету для составления индивидуального меню.
+            </h5>
+        <br>
+        <h5 style="padding-bottom:7px;font-weight:normal; text-align:left; font-size:calc(11px + (13+13*0,7) * (100vw - 320px) / 1080);">
+          В результате вы получите рекомендации по объему калорий и нутриентов в рационе для достижения вашей цели,
+          а также персональное меню с рецептами на неделю с учетом ваших вкусовых предпочтений.
+        </h5>
+    </div>
+    <!-- Create Form -->
+    <form style="border-radius:5px;border-color:#fff3cd;padding-left:10px;padding-right:10px;"id="form" method="post">
+      <p style ="font-weight: bold;width:100%; color:white;text-align:center;margin-top:10px;">{{ error }}</p>
+      <p>{{ rec1 }}</p>
+      <p>{{ rec2 }}</p>
+      <p>{{ rec3 }}</p>
+      <p>{{ rec4 }}</p>
+      <p>{{ rec5 }}</p>
+      <p style ="font-weight: bold;">{{ calories }}</p>
+      <p>{{ belok_str }}</p>
+      <p>{{ zhir_str }}</p>
+      <p>{{ uglevod_str }}</p>
+      <p style ="font-weight: bold;">{{str1}}</p>
+      <p>{{zavtrak}}</p>
+      <p>{{ z_href }}</p>
+      <p>{{obed}}</p>
+      <p>{{ o_href }}</p>
+      <p>{{uzhin}}</p>
+      <p>{{ u_href }}</p>
+      {% csrf_token%}
+      {{ form.age }} <br>
+      {{ form.height }} <br>
+      {{ form.weight }} <br>
+      <p style="font-weight:bold;text-align:left;margin-left:3px;font-size:calc(10px + (10+10*0,7) * (100vw - 320px) / 1080);">Укажите ваш пол</p>
+      {{ form.gender }} <br>
+      <p style="font-weight:bold;text-align:left;margin-left:3px;font-size:calc(10px + (10+10*0,7) * (100vw - 320px) / 1080);">Какая цель вашего питания?</p>
+      {{ form.goal }} <br>
+      <p style="font-weight:bold;text-align:left;margin-left:3px;font-size:calc(10px + (10+10*0,7) * (100vw - 320px) / 1080);">Как бы вы описали ваш уровень активности?</p>
+      {{ form.sport }} <br>
+       <p style="font-weight:bold;text-align:left;margin-left:3px;font-size:calc(10px + (10+10*0,7) * (100vw - 320px) / 1080);">Что вы предпочитаете есть на завтрак?</p>
+      {{ form.breakfast }} <br>
+       <p style="font-weight:bold;text-align:left;margin-left:3px;font-size:calc(10px + (10+10*0,7) * (100vw - 320px) / 1080);">Что вы предпочитаете есть на обед?</p>
+      {{ form.lunch }} <br>
+       <p style="font-weight:bold;text-align:left;margin-left:3px;font-size:calc(10px + (10+10*0,7) * (100vw - 320px) / 1080);">Что вы предпочитаете есть на ужин?</p>
+      {{ form.dinner }} <br>
+      <button  class ="btn btn-success" type="submit" value="submit">Составить меню</button>
+    </form>
+{% endblock%}
+
+{% block title %}Главная страница{% endblock %}

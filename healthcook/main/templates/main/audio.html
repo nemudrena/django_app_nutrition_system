@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+{% block header%}
+<h1>Медитации</h1>
+{% endblock%}
+{% block content%}
+    <div style="margin-top:20px;padding-bottom:200px;"class="features">
+        <div class="alert alert-warning">
+            <h4 style="font-size:calc(15px + (20+20*0,7) * (100vw - 320px) / 1080);">
+                Добро пожаловать на страницу медитаций!
+            </h4>
+            <br>
+            <h5 style="padding-bottom:7px;font-weight:normal;text-align:left; font-size:calc(11px + (13+13*0,7) * (100vw - 320px) / 1080);">
+                <strong>Медитации</strong> - это прекрасный способ улучшить свое физическое и психическое здоровье, снять стресс и напряжение, а также научиться лучше понимать свои эмоции и мысли.
+            </h5>
+            <br>
+            <audio controls src="static/main/audio/1.mp3"></audio>
+            <br>
+            <audio controls src="static/main/audio/2.mp3"></audio><br><br>
+        </div>
+    </div>
+{% endblock%}
+
+{% block title %}Медитации{% endblock %}

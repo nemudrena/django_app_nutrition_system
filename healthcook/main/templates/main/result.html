@@ -1,0 +1,68 @@
+{% extends 'main/layout.html' %}
+{% block header%}
+<h1>Ваши результаты</h1>
+{% endblock%}
+{% block content%}
+    <div class="features">
+        <div  style="padding:30px;"  class="alert alert-warning">
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ваша норма калорий: <strong>{{calories}} кКал</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ваша норма белков в день: <strong>{{protein}} гр</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ваша норма углеводов в день: <strong>{{carbon}} гр</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ваша норма жиров в день: <strong>{{lipid}} гр</strong></h4><br>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>День первый</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Завтрак: {{bf.0}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkbf.0}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Обед: {{lc.0}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linklc.0}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Ужин: {{dn.0}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkdn.0}}</h4><br>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>День второй</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Завтрак: {{bf.1}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkbf.1}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Обед: {{lc.1}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linklc.1}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Ужин: {{dn.1}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkdn.1}}</h4><br>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>День третий</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Завтрак: {{bf.2}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkbf.2}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Обед: {{lc.2}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linklc.2}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Ужин: {{dn.2}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkdn.2}}</h4><br>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>День четвертый</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Завтрак: {{bf.3}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkbf.3}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Обед: {{lc.3}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linklc.3}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Ужин: {{dn.3}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkdn.3}}</h4><br>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>День пятый</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Завтрак: {{bf.4}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkbf.4}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Обед: {{lc.4}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linklc.4}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Ужин: {{dn.4}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkdn.4}}</h4><br>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>День шестой</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Завтрак: {{bf.5}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkbf.5}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Обед: {{lc.5}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linklc.5}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Ужин: {{dn.5}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkdn.5}}</h4><br>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>День седьмой</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Завтрак: {{bf.6}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkbf.6}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Обед: {{lc.6}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linklc.6}}</h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> <strong>Ужин: {{dn.6}}</strong></h4>
+            <h4 style="font-weight:normal; font-size:calc(12px + (12+12*0,7) * (100vw - 320px) / 1080);"> Ссылка на рецепт: {{linkdn.6}}</h4><br><br>
+        <a style="font-size:calc(12px + (15+15*0,7) * (100vw - 320px) / 1080);display:inline-block;text-decoration:none;border-radius:3px;"></a>
+        </div>
+
+
+    </div>
+{% endblock%}
+
+{% block title %}Главная страница{% endblock %}

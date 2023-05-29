@@ -1,0 +1,32 @@
+form{
+    width:70%;
+    margin-top:50px;
+    margin-left:3%;
+}
+
+
+
+form input{
+      box-sizing:border-box;
+}
+
+form textarea {
+    width:100%;
+    height:200px;
+}
+form button{
+    width:30%;
+}
+
+form span{
+   margin-bottom:500px;
+}
+
+
+#message text-area {
+height:200px;width:400px;
+}
+#message{
+padding-bottom:20px;
+}
+

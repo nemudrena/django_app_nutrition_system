@@ -1,0 +1,119 @@
+body {
+    background: #181818;
+}
+
+header{
+    float:left;
+    background: #181818;
+    width:75%;
+    padding: 2.5%;
+    color: #fff;
+    border-bottom: 5px solid #4d4d4d;
+    border-left: 5px solid #4d4d4d;
+}
+header h1{
+    font-weight: bold;
+    font-size: calc(14px + (16+16*0,7) * (100vw - 320px) / 1080);
+}
+
+
+aside{
+
+    box-sizing: border-box;
+    float:left;
+    background: #181818;
+    width:25%;
+    padding: 2.5%;
+    color: #fff;
+}
+
+aside .logo img{
+    margin-top:2.5%;
+    height:calc(11px + (16+16*0,7) * (100vw - 320px) / 1080);
+    display:inline-block;
+    vertical-align: top;
+}
+
+aside .logo span{
+    display:inline-block;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: calc(11px + (16+16*0,7) * (100vw - 320px) / 1080);
+}
+
+aside ul{
+    list-style:none;
+    padding-left:0;
+}
+
+aside li {
+    padding:0px;
+    margin-left:10%;
+    display:block;
+    margin-top: 10px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover{
+    color:#eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+aside a {
+    color: #fff;
+    text-decoration: none;
+    font-size:calc(11px + (16+16*0,7) * (100vw - 320px) / 1080);
+}
+
+main{
+    width:60%;
+
+}
+
+main .features{
+    border-left: 5px solid #4d4d4d;
+    width: 75%;
+    box-sizing:border-box;
+    float:left;
+    background:green;
+    height:80%;
+}
+main .features{
+    color: green;
+    text-align: center;
+}
+
+main .features h1 {font-size:50px;}
+
+
+
+footer{
+    float:left;
+    box-sizing:border-box;
+    width:100%;
+    height:10%;
+    text-align: center;
+    background: #181818;
+    color:#fff;
+    border-top:5px solid #4d4d4d;
+}
+
+footer p{margin-top:1%;}
+
+
+#nav ul{
+    display:none;
+    padding:0px;
+}
+
+#nav li:hover ul{display:block;}
+
+#btn {
+   display: inline-block; /* Строчно-блочный элемент */
+   background: yellow; /* Серый цвет фона */
+   color: #fff; /* Белый цвет текста */
+   padding: 1rem 1.5rem; /* Поля вокруг текста */
+   text-decoration: none; /* Убираем подчёркивание */
+   border-radius: 3px; /* Скругляем уголки */
+}

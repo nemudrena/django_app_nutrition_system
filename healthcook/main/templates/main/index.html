@@ -1,0 +1,50 @@
+{% extends 'main/layout.html' %}
+{% block header%}
+<h1>Главная страница</h1>
+{% endblock%}
+{% block title %}Главная страница{% endblock %}
+{% block content%}
+
+    <div style="margin-top:20px;"class="features">
+        <div   class="alert alert-warning">
+        <h4 style="font-size:calc(15px + (20+20*0,7) * (100vw - 320px) / 1080);"> Добро пожаловать на <strong style="color:#eb5959">HealthCook!</strong></h4>
+        </div>
+        <div class="alert alert-warning">
+        <h5 style="padding-bottom:7px;font-weight:normal;text-align:left; font-size:calc(11px + (13+13*0,7) * (100vw - 320px) / 1080);"><strong style="color:#eb5959">HealthCook</strong> - это рекомендательный онлайн-сервис
+            по системе питания человека.
+        </h5>
+        <h5 style="padding-bottom:7px;font-weight:normal; text-align:left; font-size:calc(11px + (13+13*0,7) * (100vw - 320px) / 1080);">Мы предлагаем <strong>инновационный подход</strong> к здоровому питанию,
+            который <strong>основан на научных исследованиях</strong> и <strong>персональных
+            потребностях</strong> каждого человека.
+        </h5>
+        <div style="padding:0px;" class="container">
+            <img src="static/main/img/header-bg.jpg" alt="Здорово есть">
+        </div>
+        </div>
+        <div style="" class="alert alert-warning">
+            <h4 style="font-size:calc(20px + (20+20*0,7) * (100vw - 320px) / 1080);margin-top:10px;font-weight:bold;">Главное о нас:</h4>
+        <br>
+            <i style="color:#eb5959;font-size:calc(25px + (35+35*0,7) * (100vw - 320px) / 1080);" class="bi bi-1-square"></i>
+        <h5 style="padding-top:20px;padding-bottom:7px;font-weight:normal; text-align:left; font-size:calc(11px + (13+13*0,7) * (100vw - 320px) / 1080);">  В основе работы нашего сайта используются <strong>алгоритмы нейронных сетей</strong>,
+            чтобы анализировать данные о вашем здоровье, образе жизни и питании.
+            На основе этой информации, он создает <strong>индивидуальный план питания</strong>,
+            который учитывает ваши потребности в питательных веществах, калориях и других факторах.
+        </h5>
+        <br>
+            <i style="padding-bottom:7px;color:#eb5959;font-size:calc(25px + (35+35*0,7) * (100vw - 320px) / 1080);" class="bi bi-2-square"></i>
+        <h5 style="padding-top:20px;padding-bottom:7px;font-weight:normal; text-align:left; font-size:calc(11px + (13+13*0,7) * (100vw - 320px) / 1080);"> Мы предлагаем <strong>удобный интерфейс</strong>, а также наш сервис доступен
+            <strong>на любом устройстве</strong>, что позволяет использовать его <strong>в любое время</strong> и <strong>в любом месте</strong>.
+        </h5>
+
+        <br>
+          <i style="padding-bottom:7px;color:#eb5959;font-size:calc(25px + (35+35*0,7) * (100vw - 320px) / 1080);" class="bi bi-3-square"></i>
+        <h5 style="padding-top:20px;padding-bottom:7px;font-weight:normal; text-align:left; font-size:calc(11px + (13+13*0,7) * (100vw - 320px) / 1080);"> Мы уверены, что <strong>HealhCook поможет</strong> вам <strong>достичь ваших целей</strong>
+            по здоровому питанию и <strong>улучшить ваше здоровье</strong>.</h5>
+
+        <h5 style="padding-bottom:7px;font-weight:normal; text-align:left; font-size:calc(11px + (13+13*0,7) * (100vw - 320px) / 1080);">Присоединяйтесь к нам сегодня и начните свой <strong>путь к здоровому образу жизни!</strong>
+        </h5>
+            <br>
+        <a style="font-size:calc(12px + (15+15*0,7) * (100vw - 320px) / 1080);display:inline-block;background:#eb5959;color:#fff3cd;padding:1rem 1.5 rem;text-decoration:none;border-radius:3px;" href="form" class="btn">Получить персональное меню</a>
+        </div>
+    </div>
+{% endblock%}
